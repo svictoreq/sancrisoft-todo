@@ -7,10 +7,6 @@ import App from './components/App';
 import reducer from './reducers/index'
 import registerServiceWorker from './registerServiceWorker';
 
-const initialState = {
-	todos: [],
-	filter: 'ALL'
-}
 const store = createStore(reducer);
 
 ReactDOM.render(
