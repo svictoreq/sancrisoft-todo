@@ -7,7 +7,7 @@ const Footer = (props) => {
 		<footer>
 			<div id="filters">
 				<Filters filter="ALL" />
-				<Filters filter="ACTIVE" />
+				<Filters filter="PENDING" />
 				<Filters filter="COMPLETED" />
 			</div>
 			<ClearCompleted />
