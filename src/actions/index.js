@@ -32,6 +32,10 @@ export const removeTodo = (id) => ({
 	id
 });
 
+export const toggleAll = () => ({
+	type: 'TOGGLE_ALL'
+});
+
 // Filter Actions
 
 export const setFilter = (filter) => ({

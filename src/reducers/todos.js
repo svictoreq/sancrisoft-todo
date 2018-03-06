@@ -19,6 +19,10 @@ export function todos(state = [], action) {
 		case 'CLEAR_COMPLETED':
 			return state.filter(todo => (todo.completed === false));
 
+		case 'TOGGLE_ALL':
+			const allCompleted = state.every(todo => todo.completed);
+			return state.map(todo => ({...todo, completed: !allCompleted}))
+
 		default:
 			return state;
 	}

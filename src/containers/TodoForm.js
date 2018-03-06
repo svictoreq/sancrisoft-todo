@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions/index';
+import ToggleAll from '../containers/ToggleAll';
 
 const TodoForm = ({dispatch}) => {
 	let taskInput;
@@ -12,10 +13,13 @@ const TodoForm = ({dispatch}) => {
 	};
 
 	return(
-		<form onSubmit={handleSubmit}>
-			<input type="text" ref={input => (taskInput = input)} />
-			<button type="submit">+ Add TODO</button>
-		</form>
+		<Fragment>
+			<ToggleAll />
+			<form onSubmit={handleSubmit}>
+				<input type="text" ref={input => (taskInput = input)} />
+				<button type="submit">+ Add TODO</button>
+			</form>
+		</Fragment>
 	)
 };
 
