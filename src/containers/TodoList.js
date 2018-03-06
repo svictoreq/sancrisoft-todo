@@ -8,7 +8,7 @@ const mapStateToProps = (state) => {
 		case 'ALL':
 			return state;
 
-		case 'ACTIVE':
+		case 'PENDING':
 			visible = state.todos.filter(todo => !todo.completed);
 			return {...state, todos: visible};
 
