@@ -12,6 +12,9 @@ export function todos(state = [], action) {
 				todo.id === action.id ? {...todo, editable: !todo.editable} : todo
 			))}
 
+		case 'REMOVE_TODO':
+			return {...state, todos: state.todos.filter(todo => !(todo.id === action.id))}
+
 		case 'ASSIGN_TEXT':
 			return {...state, todos: state.todos.map(todo => (
 				todo.id === action.id ? {...todo, editable: !todo.editable, text: action.text} : todo

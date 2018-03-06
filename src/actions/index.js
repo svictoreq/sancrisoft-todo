@@ -24,3 +24,8 @@ export const editTodo = (id) => ({
 	type: 'EDIT_TODO',
 	id
 });
+
+export const removeTodo = (id) => ({
+	type: 'REMOVE_TODO',
+	id
+});

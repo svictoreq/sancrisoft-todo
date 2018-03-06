@@ -1,0 +1,10 @@
+.remove-todo {
+	display: none;
+	float: right;
+	color: red;
+}
+
+li:hover .remove-todo {
+	display: block;
+	float: right;
+}

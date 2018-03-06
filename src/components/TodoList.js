@@ -1,7 +1,7 @@
 import React from 'react';
 import Todo from './Todo';
 
-const TodoList = ({todos, onButtonClick, onDoubleClick, onEditSubmit}) => {
+const TodoList = ({todos, onButtonClick, onDoubleClick, onEditSubmit, onRemoveClick}) => {
 	return(
 		<ul>
 			{todos.map(todo => (
@@ -13,6 +13,7 @@ const TodoList = ({todos, onButtonClick, onDoubleClick, onEditSubmit}) => {
 				editable={todo.editable}
 				handleClick={() => onButtonClick(todo.id)}
 				handleDoubleClick={() => onDoubleClick(todo.id)}
+				handleRemove={() => onRemoveClick(todo.id)}
 				handleSubmit={onEditSubmit} />
 			))}
 		</ul>
