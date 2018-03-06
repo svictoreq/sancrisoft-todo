@@ -4,13 +4,14 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import './css/index.css';
 import App from './components/App';
-import { todos } from './reducers/todos'
+import reducer from './reducers/index'
 import registerServiceWorker from './registerServiceWorker';
 
 const initialState = {
-	todos: []
+	todos: [],
+	filter: 'ALL'
 }
-const store = createStore(todos, initialState);
+const store = createStore(reducer);
 
 ReactDOM.render(
 	<Provider store={store}>

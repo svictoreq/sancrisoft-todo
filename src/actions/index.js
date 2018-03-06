@@ -1,3 +1,5 @@
+// Todos Actions
+
 export const addTodo = (text) => ({
 	type: 'ADD_TODO',
 	todo: {
@@ -28,4 +30,11 @@ export const editTodo = (id) => ({
 export const removeTodo = (id) => ({
 	type: 'REMOVE_TODO',
 	id
+});
+
+// Filter Actions
+
+export const setFilter = (filter) => ({
+	type: 'SET_FILTER',
+	filter
 });
