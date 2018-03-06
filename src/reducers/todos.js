@@ -16,6 +16,9 @@ export function todos(state = [], action) {
 			return state.map(todo => (todo.id === action.id ? {...todo, editable: !todo.editable, text: action.text}
 				: todo));
 
+		case 'CLEAR_COMPLETED':
+			return state.filter(todo => (todo.completed === false));
+
 		default:
 			return state;
 	}

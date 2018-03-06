@@ -38,3 +38,9 @@ export const setFilter = (filter) => ({
 	type: 'SET_FILTER',
 	filter
 });
+
+// Clear Actions
+
+export const clearCompleted = () => ({
+	type: 'CLEAR_COMPLETED'
+});
