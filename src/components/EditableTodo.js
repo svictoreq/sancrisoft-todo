@@ -9,7 +9,7 @@ const EditableTodo = ({text, id, onSubmit}) => {
 	return (
 		<li>
 			<form onSubmit={handleSubmit}>
-				<input type="text" placeholder={text} ref={input => editInput = input} />
+				<input type="text" defaultValue={text} ref={input => editInput = input} />
 			</form>
 		</li>
 	)
