@@ -3,11 +3,24 @@ export const addTodo = (text) => ({
 	todo: {
 		completed: false,
 		id: Date.now(),
+		editable: false,
 		text
 	}
 });
 
 export const completeTodo = (id) => ({
 	type: 'COMPLETE_TODO',
+	id
+});
+
+
+export const assignText = (text, id) => ({
+	type: 'ASSIGN_TEXT',
+	text,
+	id
+})
+
+export const editTodo = (id) => ({
+	type: 'EDIT_TODO',
 	id
 });
