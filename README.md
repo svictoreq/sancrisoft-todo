@@ -14,6 +14,7 @@ En la esquina inferior izquierda, se encuentra un contador de tareas pendientes.
 ## Instrucciones básicas de uso
 Las instrucciones indicadas, aplican para todo tipo de dispositivos.
 
+* Luego de clonar el repositorio: `cd sancrisoft-todo && npm start`.
 * Para crear una tarea, basta con escribirla y presionar enter, o alternativamente presionar el botón a la derecha de la caja de texto.
 * Para marcar o desmarcar una tarea, debe presionarse el botón posicionado a la izquierda de la tarea.
 * Para marcar o desmarcar todas las tareas, se debe presionar el botón posicionado a la izquierda de la caja de texto.
