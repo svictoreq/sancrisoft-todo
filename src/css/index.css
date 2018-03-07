@@ -58,7 +58,8 @@ header {
 	box-sizing: border-box;
 	display: flex;
 	width: 100%;
-	min-height: 10vh;
+	min-height: 60px;
+	height: 10vh;
 	padding: 0 1%;
 	border-bottom: 1px solid #9e9e9e50;
 }
@@ -111,6 +112,7 @@ main ul li {
 	display: flex;
 	align-items: center;
 	width: 100%;
+	min-height: 60px;
 	height: 10vh;
 	padding: 0 1%;
 	border-bottom: 1px solid #9e9e9e3f;
