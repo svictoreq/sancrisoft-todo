@@ -149,6 +149,7 @@ main ul li form {
 }
 
 main ul li input {
+	width: 100%;
 	font-size: 20px;
 	font-weight: 300;
 	font-style: italic;
