@@ -7,8 +7,12 @@ class App extends Component {
   render() {
     return (
     	<Fragment>
-	      <TodoForm />
-	      <TodoList />
+    		<header>
+	      	<TodoForm />
+	      </header>
+	      <main>
+	      	<TodoList />
+	      </main>
 	      <Footer />
       </Fragment>
     );

@@ -1,8 +1,9 @@
 import React from 'react';
+import CheckButton from './CheckButton';
 
-const ToggleAllButton = ({onClick}) => {
+const ToggleAllButton = ({onClick, completed}) => {
 	return(
-		<button onClick={onClick}>Toggle All</button>
+		<CheckButton onClick={onClick} completed={completed} />
 	)
 }
 
